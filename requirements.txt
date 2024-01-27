@@ -4,5 +4,8 @@ matplotlib
 seaborn
 statsmodels
 scikit-learn
-xgboost
+xgboost==2.0.3
+lunardate
+convertdate
+holidays
 fbprophet
