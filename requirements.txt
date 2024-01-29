@@ -5,3 +5,4 @@ seaborn
 statsmodels
 scikit-learn
 xgboost==2.0.3
+pyarrow
