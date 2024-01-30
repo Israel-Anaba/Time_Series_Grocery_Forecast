@@ -1,16 +1,21 @@
 
-1. This error occurs because the execution policy of PowerShell is preventing the activation script from running. To resolve this issue, you can change the execution policy to allow the script to run. Here's how you can do it:
+# Change policy restriction on windows to use virtual environment
+1.Open PowerShell as an administrator:
+2.Press the Windows key.
+3.Type "PowerShell."
+4.Right-click on "Windows PowerShell" in the search results.
+5.Select "Run as administrator."
 
-Open PowerShell as an administrator. You can do this by right-clicking on the PowerShell icon and selecting "Run as administrator."
+#Run this on the terminal
 
-2. Run the following command to check the current execution policy:
+powershell Get-ExecutionPolicy
 
-...powershell Get-ExecutionPolicy...
-
-
-
-...powershell Set-ExecutionPolicy RemoteSigned...
+powershell Set-ExecutionPolicy RemoteSigned
 
 
-
+# command to manuelly create virtual environment
+python -m venv venv
+venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
 
